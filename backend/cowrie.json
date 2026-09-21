@@ -1,0 +1,10 @@
+{"eventid":"cowrie.session.connect","src_ip":"185.220.101.5","session":"4b99d3067d3a","protocol":"ssh","country":"Netherlands","timestamp":"2026-09-21T06:11:13.751Z"}
+{"eventid":"cowrie.command.input","session":"4b99d3067d3a","input":"whoami","timestamp":"2026-09-21T06:11:13.863Z"}
+{"eventid":"cowrie.command.input","session":"4b99d3067d3a","input":"id","timestamp":"2026-09-21T06:11:13.973Z"}
+{"eventid":"cowrie.command.input","session":"4b99d3067d3a","input":"uname -a","timestamp":"2026-09-21T06:11:14.082Z"}
+{"eventid":"cowrie.command.input","session":"4b99d3067d3a","input":"cat /etc/passwd","timestamp":"2026-09-21T06:11:14.192Z"}
+{"eventid":"cowrie.command.input","session":"4b99d3067d3a","input":"cat /etc/os-release","timestamp":"2026-09-21T06:11:14.301Z"}
+{"eventid":"cowrie.command.input","session":"4b99d3067d3a","input":"netstat -tulnp","timestamp":"2026-09-21T06:11:14.411Z"}
+{"eventid":"cowrie.command.input","session":"4b99d3067d3a","input":"ps aux","timestamp":"2026-09-21T06:11:14.520Z"}
+{"eventid":"cowrie.command.input","session":"4b99d3067d3a","input":"w","timestamp":"2026-09-21T06:11:14.630Z"}
+{"eventid":"cowrie.session.closed","session":"4b99d3067d3a","src_ip":"185.220.101.5","protocol":"ssh","country":"Netherlands","duration":1,"timestamp":"2026-09-21T06:11:14.738Z"}
